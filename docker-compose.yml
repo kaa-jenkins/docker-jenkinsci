@@ -1,9 +1,11 @@
 master:
   build: .
   environment:
-    JAVA_OPTS: "-Djava.awt.headless=true"
+    JAVA_OPTS: "-Dfile.encoding=UTF8 -Duser.timezone=UTC -Dmail.smtp.starttls.enable=true -Dhudson.DNSMultiCast.disabled=true -Dhudson.udp=-1 -Djava.awt.headless=true"
+    #JAVA_OPTS: "-Djava.awt.headless=true"
   ports:
-    - "50000:50000"
-    - "8080:8080"
+    - "0.0.0.0:50000:50000"
+    - "0.0.0.0:8080:8080"
   volumes:
-    - /var/jenkins_home
+    - jenkins_home:/var/jenkins_home
+

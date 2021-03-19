@@ -1,4 +1,5 @@
 *.tmp
+distr/
 bats/
 target/
 tests/functions/init.groovy.d/
