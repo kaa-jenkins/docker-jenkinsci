@@ -1,3 +1,4 @@
+#A.Krylov
 FROM centos:8.3.2011
 
 RUN echo -e '[AdoptOpenJDK]\n\
